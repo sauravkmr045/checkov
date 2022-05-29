@@ -1,0 +1,16 @@
+pip install checkov
+pip install pre-commit
+pre-commit install
+
+
+
+
+.pre-commit-config.yaml
+
+
+
+repos:
+-   repo: https://github.com/sauravkmr045/checkov.git
+    rev: v2.3.0
+    hooks:
+    -   id: checkov
